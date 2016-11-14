@@ -14,34 +14,32 @@
 
     ```
     [ec2-user@ip-172-0-0-4 ~]$ mount | column -t
-    sysfs       on  /sys                             type  sysfs       (rw,nosuid,nodev,noexec,relatime,seclabel)
-    proc        on  /proc                            type  proc        (rw,nosuid,nodev,noexec,relatime)
-    devtmpfs    on  /dev                             type  devtmpfs    (rw,nosuid,seclabel,size=7598116k,nr_inodes=1899529,mode=755)
-    securityfs  on  /sys/kernel/security             type  securityfs  (rw,nosuid,nodev,noexec,relatime)
-    tmpfs       on  /dev/shm                         type  tmpfs       (rw,nosuid,nodev,seclabel)
-    devpts      on  /dev/pts                         type  devpts      (rw,nosuid,noexec,relatime,seclabel,gid=5,mode=620,ptmxmode=000)
-    tmpfs       on  /run                             type  tmpfs       (rw,nosuid,nodev,seclabel,mode=755)
-    tmpfs       on  /sys/fs/cgroup                   type  tmpfs       (ro,nosuid,nodev,noexec,seclabel,mode=755)
-    cgroup      on  /sys/fs/cgroup/systemd           type  cgroup      (rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd)
-    pstore      on  /sys/fs/pstore                   type  pstore      (rw,nosuid,nodev,noexec,relatime)
-    cgroup      on  /sys/fs/cgroup/hugetlb           type  cgroup      (rw,nosuid,nodev,noexec,relatime,hugetlb)
-    cgroup      on  /sys/fs/cgroup/net_cls,net_prio  type  cgroup      (rw,nosuid,nodev,noexec,relatime,net_prio,net_cls)
-    cgroup      on  /sys/fs/cgroup/freezer           type  cgroup      (rw,nosuid,nodev,noexec,relatime,freezer)
-    cgroup      on  /sys/fs/cgroup/cpu,cpuacct       type  cgroup      (rw,nosuid,nodev,noexec,relatime,cpuacct,cpu)
-    cgroup      on  /sys/fs/cgroup/cpuset            type  cgroup      (rw,nosuid,nodev,noexec,relatime,cpuset)
-    cgroup      on  /sys/fs/cgroup/pids              type  cgroup      (rw,nosuid,nodev,noexec,relatime,pids)
-    cgroup      on  /sys/fs/cgroup/memory            type  cgroup      (rw,nosuid,nodev,noexec,relatime,memory)
-    cgroup      on  /sys/fs/cgroup/devices           type  cgroup      (rw,nosuid,nodev,noexec,relatime,devices)
-    cgroup      on  /sys/fs/cgroup/perf_event        type  cgroup      (rw,nosuid,nodev,noexec,relatime,perf_event)
-    cgroup      on  /sys/fs/cgroup/blkio             type  cgroup      (rw,nosuid,nodev,noexec,relatime,blkio)
-    configfs    on  /sys/kernel/config               type  configfs    (rw,relatime)
-    /dev/xvda2  on  /                                type  xfs         (rw,relatime,seclabel,attr2,inode64,noquota)
-    selinuxfs   on  /sys/fs/selinux                  type  selinuxfs   (rw,relatime)
-    systemd-1   on  /proc/sys/fs/binfmt_misc         type  autofs      (rw,relatime,fd=29,pgrp=1,timeout=300,minproto=5,maxproto=5,direct)
-    hugetlbfs   on  /dev/hugepages                   type  hugetlbfs   (rw,relatime,seclabel)
-    debugfs     on  /sys/kernel/debug                type  debugfs     (rw,relatime)
-    mqueue      on  /dev/mqueue                      type  mqueue      (rw,relatime,seclabel)
-    tmpfs       on  /run/user/1000                   type  tmpfs       (rw,nosuid,nodev,relatime,seclabel,size=1497260k,mode=700,uid=1000,gid=1000)
+    proc        on  /proc                       type  proc        (rw,nosuid,nodev,noexec,relatime)
+    sysfs       on  /sys                        type  sysfs       (rw,nosuid,nodev,noexec,relatime,seclabel)
+    devtmpfs    on  /dev                        type  devtmpfs    (rw,nosuid,seclabel,size=7600900k,nr_inodes=1900225,mode=755)
+    securityfs  on  /sys/kernel/security        type  securityfs  (rw,nosuid,nodev,noexec,relatime)
+    tmpfs       on  /dev/shm                    type  tmpfs       (rw,nosuid,nodev,seclabel)
+    devpts      on  /dev/pts                    type  devpts      (rw,nosuid,noexec,relatime,seclabel,gid=5,mode=620,ptmxmode=000)
+    tmpfs       on  /run                        type  tmpfs       (rw,nosuid,nodev,seclabel,mode=755)
+    tmpfs       on  /sys/fs/cgroup              type  tmpfs       (rw,nosuid,nodev,noexec,seclabel,mode=755)
+    cgroup      on  /sys/fs/cgroup/systemd      type  cgroup      (rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd)
+    pstore      on  /sys/fs/pstore              type  pstore      (rw,nosuid,nodev,noexec,relatime)
+    cgroup      on  /sys/fs/cgroup/cpuset       type  cgroup      (rw,nosuid,nodev,noexec,relatime,cpuset)
+    cgroup      on  /sys/fs/cgroup/cpu,cpuacct  type  cgroup      (rw,nosuid,nodev,noexec,relatime,cpuacct,cpu)
+    cgroup      on  /sys/fs/cgroup/memory       type  cgroup      (rw,nosuid,nodev,noexec,relatime,memory)
+    cgroup      on  /sys/fs/cgroup/devices      type  cgroup      (rw,nosuid,nodev,noexec,relatime,devices)
+    cgroup      on  /sys/fs/cgroup/freezer      type  cgroup      (rw,nosuid,nodev,noexec,relatime,freezer)
+    cgroup      on  /sys/fs/cgroup/net_cls      type  cgroup      (rw,nosuid,nodev,noexec,relatime,net_cls)
+    cgroup      on  /sys/fs/cgroup/blkio        type  cgroup      (rw,nosuid,nodev,noexec,relatime,blkio)
+    cgroup      on  /sys/fs/cgroup/perf_event   type  cgroup      (rw,nosuid,nodev,noexec,relatime,perf_event)
+    cgroup      on  /sys/fs/cgroup/hugetlb      type  cgroup      (rw,nosuid,nodev,noexec,relatime,hugetlb)
+    configfs    on  /sys/kernel/config          type  configfs    (rw,relatime)
+    /dev/xvda2  on  /                           type  xfs         (rw,relatime,seclabel,attr2,inode64,noquota)
+    selinuxfs   on  /sys/fs/selinux             type  selinuxfs   (rw,relatime)
+    systemd-1   on  /proc/sys/fs/binfmt_misc    type  autofs      (rw,relatime,fd=32,pgrp=1,timeout=300,minproto=5,maxproto=5,direct)
+    debugfs     on  /sys/kernel/debug           type  debugfs     (rw,relatime)
+    mqueue      on  /dev/mqueue                 type  mqueue      (rw,relatime,seclabel)
+    hugetlbfs   on  /dev/hugepages              type  hugetlbfs   (rw,relatime,seclabel)
 
     ```
 
@@ -50,15 +48,15 @@
     ```
     [ec2-user@ip-172-0-0-4 ~]$ df -H
     Filesystem      Size  Used Avail Use% Mounted on
-    /dev/xvda2       11G  1.4G  9.5G  13% /
+    /dev/xvda2      108G  1.7G  106G   2% /
     devtmpfs        7.8G     0  7.8G   0% /dev
     tmpfs           7.7G     0  7.7G   0% /dev/shm
     tmpfs           7.7G   18M  7.7G   1% /run
     tmpfs           7.7G     0  7.7G   0% /sys/fs/cgroup
-    tmpfs           1.6G     0  1.6G   0% /run/user/1000
+
     [ec2-user@ip-172-0-0-4 ~]$ sudo fdisk -l /dev/xvda2
 
-    Disk /dev/xvda2: 10.7 GB, 10735304192 bytes, 20967391 sectors
+    Disk /dev/xvda2: 107.4 GB, 107372068352 bytes, 209711071 sectors
     Units = sectors of 1 * 512 = 512 bytes
     Sector size (logical/physical): 512 bytes / 512 bytes
     I/O size (minimum/optimal): 512 bytes / 512 bytes
@@ -80,22 +78,21 @@
     [ec2-user@ip-172-0-0-4 ~]$ ifconfig
     eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 9001
             inet 172.0.0.4  netmask 255.255.255.240  broadcast 172.0.0.15
-            inet6 fe80::7b:faff:fee2:a145  prefixlen 64  scopeid 0x20<link>
-            ether 02:7b:fa:e2:a1:45  txqueuelen 1000  (Ethernet)
-            RX packets 59238  bytes 71092600 (67.7 MiB)
+            inet6 fe80::dd:dcff:febb:cb55  prefixlen 64  scopeid 0x20<link>
+            ether 02:dd:dc:bb:cb:55  txqueuelen 1000  (Ethernet)
+            RX packets 211354  bytes 286895735 (273.6 MiB)
             RX errors 0  dropped 0  overruns 0  frame 0
-            TX packets 20320  bytes 2841187 (2.7 MiB)
+            TX packets 70785  bytes 13529360 (12.9 MiB)
             TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
     lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
             inet 127.0.0.1  netmask 255.0.0.0
             inet6 ::1  prefixlen 128  scopeid 0x10<host>
-            loop  txqueuelen 1  (Local Loopback)
-            RX packets 284  bytes 194232 (189.6 KiB)
+            loop  txqueuelen 0  (Local Loopback)
+            RX packets 147  bytes 97490 (95.2 KiB)
             RX errors 0  dropped 0  overruns 0  frame 0
-            TX packets 284  bytes 194232 (189.6 KiB)
+            TX packets 147  bytes 97490 (95.2 KiB)
             TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-
     ```
 
 6. Show forward and reverse host lookups using `getent` and `nslookup`
@@ -110,39 +107,39 @@
 
     Authoritative answers can be found from:
 
+    [ec2-user@ip-172-0-0-4 ~]$ nslookup 172.0.0.12
+    Server:         172.0.0.2
+    Address:        172.0.0.2#53
+
+    Non-authoritative answer:
+    12.0.0.172.in-addr.arpa  name = ip-172-0-0-12.eu-central-1.compute.internal.
+
+    Authoritative answers can be found from:
+
+    [ec2-user@ip-172-0-0-4 ~]$ nslookup 172.0.0.14
+    Server:         172.0.0.2
+    Address:        172.0.0.2#53
+
+    Non-authoritative answer:
+    14.0.0.172.in-addr.arpa  name = ip-172-0-0-14.eu-central-1.compute.internal.
+
+    Authoritative answers can be found from:
+
+    [ec2-user@ip-172-0-0-4 ~]$ nslookup 172.0.0.13
+    Server:         172.0.0.2
+    Address:        172.0.0.2#53
+
+    Non-authoritative answer:
+    13.0.0.172.in-addr.arpa  name = ip-172-0-0-13.eu-central-1.compute.internal.
+
+    Authoritative answers can be found from:
+
     [ec2-user@ip-172-0-0-4 ~]$ nslookup 172.0.0.5
     Server:         172.0.0.2
     Address:        172.0.0.2#53
 
     Non-authoritative answer:
     5.0.0.172.in-addr.arpa  name = ip-172-0-0-5.eu-central-1.compute.internal.
-
-    Authoritative answers can be found from:
-
-    [ec2-user@ip-172-0-0-4 ~]$ nslookup 172.0.0.6
-    Server:         172.0.0.2
-    Address:        172.0.0.2#53
-
-    Non-authoritative answer:
-    6.0.0.172.in-addr.arpa  name = ip-172-0-0-6.eu-central-1.compute.internal.
-
-    Authoritative answers can be found from:
-
-    [ec2-user@ip-172-0-0-4 ~]$ nslookup 172.0.0.7
-    Server:         172.0.0.2
-    Address:        172.0.0.2#53
-
-    Non-authoritative answer:
-    7.0.0.172.in-addr.arpa  name = ip-172-0-0-7.eu-central-1.compute.internal.
-
-    Authoritative answers can be found from:
-
-    [ec2-user@ip-172-0-0-4 ~]$ nslookup 172.0.0.8
-    Server:         172.0.0.2
-    Address:        172.0.0.2#53
-
-    Non-authoritative answer:
-    8.0.0.172.in-addr.arpa  name = ip-172-0-0-8.eu-central-1.compute.internal.
 
     Authoritative answers can be found from:
 
@@ -153,15 +150,7 @@
     [ec2-user@ip-172-0-0-4 ~]$ getent hosts bc1
     172.0.0.4       bc1 ip-172-0-0-4.eu-central-1.compute.internal
     [ec2-user@ip-172-0-0-4 ~]$ getent hosts ip-172-0-0-4.eu-central-1.compute.internal
-    fe80::7b:faff:fee2:a145 ip-172-0-0-4.eu-central-1.compute.internal
-    [ec2-user@ip-172-0-0-4 ~]$ getent hosts 172.0.0.5
-    172.0.0.5       bc2 ip-172-0-0-5.eu-central-1.compute.internal
-    [ec2-user@ip-172-0-0-4 ~]$ getent hosts 172.0.0.6
-    172.0.0.6       bc3 ip-172-0-0-6.eu-central-1.compute.internal
-    [ec2-user@ip-172-0-0-4 ~]$ getent hosts 172.0.0.7
-    172.0.0.7       bc4 ip-172-0-0-7.eu-central-1.compute.internal
-    [ec2-user@ip-172-0-0-4 ~]$ getent hosts 172.0.0.8
-    172.0.0.8       bc5 ip-172-0-0-8.eu-central-1.compute.internal
+    fe80::dd:dcff:febb:cb55 ip-172-0-0-4.eu-central-1.compute.internal
 
     ```
 

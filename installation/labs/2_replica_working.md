@@ -14,7 +14,7 @@ Installed the `mysql` package on all nodes (e.g. on `bc1`):
 [ec2-user@ip-172-0-0-4 ~]$ sudo yum install mysql
 ```
 
-Installed the `mysql-server` package on `bc1` and `bc2` (a.k.a `ip-172-0-0-4` and `ip-172-0-0-5`):
+Installed the `mysql-server` package on `bc1` and `bc4` (a.k.a `ip-172-0-0-4` and `ip-172-0-0-5`):
 
 ```
 [ec2-user@ip-172-0-0-4 ~]$ wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
@@ -27,7 +27,6 @@ Installed the `mysql-server` package on `bc1` and `bc2` (a.k.a `ip-172-0-0-4` an
 Moved InnoDB logfiles to home directory (just as an example, can be backed up elsewhere):
 
 ```
-[ec2-user@ip-172-0-0-4 ~]$ sudo mkdir /var/lib/mysql/logs.bk
 [ec2-user@ip-172-0-0-4 ~]$ sudo mv /var/lib/mysql/ib_logfile* ~
 ```
 
@@ -81,7 +80,7 @@ interactive-timeout
 log-error=/var/log/mysqld.log
 pid-file=/var/run/mysqld/mysqld.pid
 ```
-`server-id` has been set to 2 on the slave node (`bc2`).
+`server-id` has been set to 2 on the slave node (`bc4`).
 
 Ensured MySQL server starts at boot:
 ```
@@ -149,11 +148,9 @@ mysql> show master status;
 mysql> unlock tables;
 Query OK, 0 rows affected (0.00 sec)
 
-mysql> exit;
-Bye
 ```
 
-On Slave (`bc2`):
+On Slave (`bc4`):
 
 ```
 [ec2-user@ip-172-0-0-5 ~]$ mysql -u root -p
