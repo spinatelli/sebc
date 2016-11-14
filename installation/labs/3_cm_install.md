@@ -41,9 +41,9 @@ Started Cloudera Manager Server:
 ...and waited a bit.
 Then configured on the GUI the cluster with the wizard.
 
-![](./3_1_cm_install.png)
-![](./3_2_cm_install.png)
-![](./3_3_cm_install.png)
+![](./3_1_cm_install.PNG)
+![](./3_2_cm_install.PNG)
+![](./3_3_cm_install.PNG)
 ![](./3_cm_installed.png)
 ### Bonus Lab
 A local parcel repo has been configured to run on `bc3` a.k.a. `ip-172-0-0-5.eu-central-1.compute.internal` (private dns) using the `httpd` service.
@@ -51,4 +51,4 @@ It is reachable at http://bc3/parcel_repo
 To add new parcels, `httpd` has to be stopped, the parcel has to be copied into `/var/www/html/parcel_repo/` and `httpd` has to be restarted. The new parcel will then be visible.
 
 ![](./4_local_repo.png)
-![](./4_local_repo_directory.png)
+![](./4_local_repo_directory.PNG)
