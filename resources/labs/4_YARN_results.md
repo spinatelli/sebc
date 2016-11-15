@@ -2,7 +2,8 @@
 
 This is the output from running the YARNtest script:
 
-```[spinatelli@ip-172-0-0-13 ~]$ sh YARNtest.sh
+```
+[spinatelli@ip-172-0-0-13 ~]$ sh YARNtest.sh
 Testing loop started on Tue Nov 15 10:34:04 EST 2016
 MAP_MB 409
 RED_MB 409
