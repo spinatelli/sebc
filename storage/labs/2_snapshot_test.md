@@ -21,7 +21,11 @@ Deleted the zip file:
 [spinatelli@ip-172-0-0-4 ~]$ hadoop fs -rm /user/spinatelli/<file>
 ```
 
-Restored the deleted file:
+Restoring the deleted file:
 
 ![](2_snapshot_restore.png)
+
+Restored the deleted file:
+
+![](2_snapshot_restored.png)
 
