@@ -13,7 +13,7 @@ Enabled snapshots for `/user/spinatelli/precious` using Cloudera Manager (Backup
 
 Created a snapshot named `sebc-hdfs-test`:
 
-![](2_snapshot_list2.png)
+![](2_snapshot_list_2.png)
 
 NameNode UI Snapshot list:
 
