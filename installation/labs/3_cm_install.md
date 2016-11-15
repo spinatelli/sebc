@@ -55,6 +55,10 @@ All is good, I have a cluster.
 
 ![](./3_cm_installed.png)
 
+And it has roles all over the place.
+
+![](./3_cm_installed_cluster_status.png)
+
 ### Bonus Lab
 A local parcel repo has been configured to run on `bc3` a.k.a. `ip-172-0-0-5.eu-central-1.compute.internal` (private dns) using the `httpd` service.
 It is reachable at http://bc3/parcel_repo
