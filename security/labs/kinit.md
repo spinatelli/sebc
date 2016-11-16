@@ -13,8 +13,8 @@ Principal "testuser@EU-CENTRAL-1.COMPUTE.INTERNAL" created.
 
 Authenticated with
 ```
-[ec2-user@ip-172-0-0-4 ~]$ kinit testuser@EU-CENTRAL-1.COMPUTE.INTERNAL
-Password for testuser@EU-CENTRAL-1.COMPUTE.INTERNAL:
+[ec2-user@ip-172-0-0-4 ~]$ kinit spinatelli@EU-CENTRAL-1.COMPUTE.INTERNAL
+Password for spinatelli@EU-CENTRAL-1.COMPUTE.INTERNAL:
 ```
 
 `klist` output:
@@ -22,10 +22,9 @@ Password for testuser@EU-CENTRAL-1.COMPUTE.INTERNAL:
 ```
 [ec2-user@ip-172-0-0-4 ~]$ klist
 Ticket cache: FILE:/tmp/krb5cc_1000
-Default principal: testuser@EU-CENTRAL-1.COMPUTE.INTERNAL
+Default principal: spinatelli@EU-CENTRAL-1.COMPUTE.INTERNAL
 
 Valid starting       Expires              Service principal
-11/16/2016 10:40:22  11/17/2016 10:40:22  krbtgt/EU-CENTRAL-1.COMPUTE.INTERNAL@EU-CENTRAL-1.COMPUTE.INTERNAL
-        renew until 11/23/2016 10:40:22
-[ec2-user@ip-172-0-0-4 ~]$
+11/16/2016 11:30:55  11/17/2016 11:30:55  krbtgt/EU-CENTRAL-1.COMPUTE.INTERNAL@EU-CENTRAL-1.COMPUTE.INTERNAL
+        renew until 11/23/2016 11:30:55
 ```
