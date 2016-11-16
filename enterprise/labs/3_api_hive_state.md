@@ -36,7 +36,7 @@ $ curl -u spinatelli:cloudera -X POST http://54.93.36.100:7180/api/v2/clusters/S
 
 ## Check Hive status
 ```
-$ curl -u spinatelli:cloudera http://bc1:7180/api/v2/clusters/Spinatelli/services/hive/
+$ curl -u spinatelli:cloudera http://54.93.36.100:7180/api/v2/clusters/Spinatelli/services/hive/
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   530    0   530    0     0   5638      0 --:--:-- --:--:-- --:--:--  5638{
