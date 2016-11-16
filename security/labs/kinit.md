@@ -1,14 +1,14 @@
 # Kerberos Authentication
 
-Created `testuser` with
+Created `spinatelli` with
 ```
 [ec2-user@ip-172-0-0-4 ~]$ sudo kadmin.local
 Authenticating as principal root/admin@EU-CENTRAL-1.COMPUTE.INTERNAL with password.
-kadmin.local:  addprinc testuser@EU-CENTRAL-1.COMPUTE.INTERNAL
-WARNING: no policy specified for testuser@EU-CENTRAL-1.COMPUTE.INTERNAL; defaulting to no policy
-Enter password for principal "testuser@EU-CENTRAL-1.COMPUTE.INTERNAL":
-Re-enter password for principal "testuser@EU-CENTRAL-1.COMPUTE.INTERNAL":
-Principal "testuser@EU-CENTRAL-1.COMPUTE.INTERNAL" created.
+kadmin.local:  addprinc spinatelli@EU-CENTRAL-1.COMPUTE.INTERNAL
+WARNING: no policy specified for spinatelli@EU-CENTRAL-1.COMPUTE.INTERNAL; defaulting to no policy
+Enter password for principal "spinatelli@EU-CENTRAL-1.COMPUTE.INTERNAL":
+Re-enter password for principal "spinatelli@EU-CENTRAL-1.COMPUTE.INTERNAL":
+Principal "spinatelli@EU-CENTRAL-1.COMPUTE.INTERNAL" created.
 ```
 
 Authenticated with
