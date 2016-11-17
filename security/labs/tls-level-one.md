@@ -1,4 +1,41 @@
-# Enabling TLS Level 1 Security
+# Enabling TLS Level 1 Security - Solved
+
+Created alternative system JDK truststore `jssecacerts`:
+```
+sudo cp $JAVA_HOME/jre/lib/security/cacerts $JAVA_HOME/jre/lib/security/jssecacerts
+```
+
+Use keytool to generate a Java keystore for the Cloudera Manager Server.
+```
+keytool -genkeypair -alias cat -keyalg RSA -keystore \
+/opt/cloudera/security/jks/ip-172-0-0-4-keystore.jks -keysize 2048 -dname \
+"CN=ip-172-0-0-4.eu-central-1.compute.internal,OU=Security,O=Reply,L=Munich,C=DE" \
+-storepass cloudera -keypass cloudera
+```
+
+In Administration>Settings>Security set the "Use TLS Encryption for Agents" property to true. Moreover, set the "Cloudera Manager TLS/SSL Server JKS Keystore File Location" property to `/opt/cloudera/security/jks/ip-172-0-0-4-keystore.jks` and the "Cloudera Manager TLS/SSL Server JKS Keystore File Password" property to `cloudera`.
+
+Then on every Agent Host, replaced `use_tls=0` with `use_tls=1` in `/etc/cloudera-scm-agent/config.ini`
+
+Finally, restarted the Cloudera Manager Server with the following command to activate the TLS configuration settings.
+
+```
+sudo service cloudera-scm-server restart 
+```
+
+and on every Agent host, restarted the Agent:
+```
+sudo service cloudera-scm-agent restart
+```
+
+..and boom!, TLS Level 1 works.
+
+![](tls-level-one.png)
+
+Hosts health:
+![](tls-level-one-heartbeats.png)
+
+# Enabling TLS Level 1 Security - Original issue
 
 Following this procedure http://www.cloudera.com/documentation/enterprise/latest/topics/cm_sg_config_tls_encr.html without enabling TLS encyption for CM.
 
