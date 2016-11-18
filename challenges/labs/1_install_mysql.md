@@ -89,9 +89,6 @@ Query OK, 1 row affected (0.00 sec)
 mysql>  grant all on scm.* TO 'cloudera-scm'@'%' IDENTIFIED BY 'cloudera-scm';
 Query OK, 0 rows affected (0.00 sec)
 
-mysql> grant all on scm.* TO 'cloudera-scm'@'%' IDENTIFIED BY 'cloudera-scm';
-Query OK, 0 rows affected (0.01 sec)
-
 mysql> create database rman DEFAULT CHARACTER SET utf8;
 Query OK, 1 row affected (0.00 sec)
 
