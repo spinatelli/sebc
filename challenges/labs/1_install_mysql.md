@@ -33,6 +33,7 @@ Updating / installing...
 [ec2-user@ip-172-30-1-5 ~]$ sudo yum-config-manager --disable mysql57-community
 [ec2-user@ip-172-30-1-5 ~]$ sudo yum-config-manager --enable mysql56-community
 [ec2-user@ip-172-30-1-5 ~]$ sudo yum update -y
+[ec2-user@ip-172-30-1-5 ~]$ sudo yum install mysql-server -y
 ```
 
 The final repo config can be seen in the `1_mysql-community.repo.md`.
