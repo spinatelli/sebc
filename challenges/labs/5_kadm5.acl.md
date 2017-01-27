@@ -1,2 +1,2 @@
 */admin@EXAMPLE.COM     *
-cloudera-scm@SPINATELLI.REMOTE admil
+cloudera-scm@SPINATELLI.REMOTE admilc
