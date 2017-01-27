@@ -1,30 +1,30 @@
 
 # Information
 
-Hostname of MySQL node: `bc7`, a.k.a. `ip-10-0-0-7`, or **publicly** `ec2-52-59-249-254.eu-central-1.compute.amazonaws.com` (`52.59.249.254`)
+Hostname of MySQL node: `bcb6`, a.k.a. `ip-10-0-1-6`, or **publicly** `ec2-54-93-114-239.eu-central-1.compute.amazonaws.com` (`54.93.114.239`)
 
 MySQL version on all nodes:
 ```
-[ec2-user@ip-10-0-0-4 ~]$ ansible all -i hosts -a "mysql --version"
-bc7 | SUCCESS | rc=0 >>
+[ec2-user@ip-10-0-1-4 ~]$ ansible all -i hosts -a "mysql --version"
+bcb13 | SUCCESS | rc=0 >>
 mysql  Ver 14.14 Distrib 5.5.54, for Linux (x86_64) using readline 5.1
 
-bc9 | SUCCESS | rc=0 >>
+bcb14 | SUCCESS | rc=0 >>
 mysql  Ver 14.14 Distrib 5.5.54, for Linux (x86_64) using readline 5.1
 
-bc4 | SUCCESS | rc=0 >>
+bcb6 | SUCCESS | rc=0 >>
 mysql  Ver 14.14 Distrib 5.5.54, for Linux (x86_64) using readline 5.1
 
-bc13 | SUCCESS | rc=0 >>
+bcb4 | SUCCESS | rc=0 >>
 mysql  Ver 14.14 Distrib 5.5.54, for Linux (x86_64) using readline 5.1
 
-bc11 | SUCCESS | rc=0 >>
+bcb12 | SUCCESS | rc=0 >>
 mysql  Ver 14.14 Distrib 5.5.54, for Linux (x86_64) using readline 5.1
 ```
 
 List of databases:
 ```
-[ec2-user@ip-10-0-0-7 ~]$ mysql -u root -p
+[ec2-user@ip-10-0-1-6 ~]$ mysql -u root -p
 Enter password:
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 14
