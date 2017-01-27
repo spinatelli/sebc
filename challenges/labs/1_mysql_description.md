@@ -194,7 +194,7 @@ Installed the latest MySQL Java connector:
 [ec2-user@ip-10-0-0-4 ~]$ ansible all -i hosts -a "wget http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.40.tar.gz"
 [ec2-user@ip-10-0-0-4 ~]$ ansible all -i hosts -a "tar -zxvf mysql-connector-java-5.1.40.tar.gz"
 [ec2-user@ip-10-0-0-4 ~]$ ansible all -i hosts -a "sudo cp mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar /usr/share/java/mysql-connector-java.jar"
-[ec2-user@ip-10-0-0-4 ~]$ ansible all -a "sudo bash -c \"echo 'export CLASSPATH=/usr/share/java/mysql-connector-java-5.1.40-bin.jar:\$CLASSPATH' > /etc/profile.d/classpath.sh\""
+[ec2-user@ip-10-0-0-4 ~]$ ansible all -a "sudo bash -c \"echo 'export CLASSPATH=/usr/share/java/mysql-connector-java.jar:\$CLASSPATH' > /etc/profile.d/classpath.sh\""
 [ec2-user@ip-10-0-0-4 ~]$ ansible all -i hosts -a "ls /usr/share/java"
 bc7 | SUCCESS | rc=0 >>
 mysql-connector-java.jar
