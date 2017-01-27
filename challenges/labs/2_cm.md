@@ -36,7 +36,7 @@ All done, your SCM database is configured correctly!
 # to connect to databases, see the "Cloudera Manager Installation Guide."
 #
 com.cloudera.cmf.db.type=mysql
-com.cloudera.cmf.db.host=bc7
+com.cloudera.cmf.db.host=10.0.1.6
 com.cloudera.cmf.db.name=scm
 com.cloudera.cmf.db.user=cloudera-scm
 com.cloudera.cmf.db.password=cloudera-scm

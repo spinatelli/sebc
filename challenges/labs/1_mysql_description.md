@@ -1,6 +1,6 @@
 # Install MySQL community server
 
-The first host listed is `bcb6` (`54.93.114.239`), which I will use for the MySQL server. 
+The first host listed is `bcb6` a.k.a. `ec2-52-59-205-75.eu-central-1.compute.amazonaws.com` (`52.59.205.75`), which I will use for the MySQL server. 
 Downloaded and installed the repo RPM from `dev.mysql.com` on all nodes:
 ```
 [ec2-user@ip-10-0-1-4 ~]$ ansible all -i hosts -a "wget http://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm"

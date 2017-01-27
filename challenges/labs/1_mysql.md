@@ -1,7 +1,7 @@
 
 # Information
 
-Hostname of MySQL node: `bcb6`, a.k.a. `ip-10-0-1-6`, or **publicly** `ec2-54-93-114-239.eu-central-1.compute.amazonaws.com` (`54.93.114.239`)
+Hostname of MySQL node: `bcb6`, a.k.a. `ip-10-0-1-6`, or **publicly** `ec2-52-59-205-75.eu-central-1.compute.amazonaws.com` (`52.59.205.75`)
 
 MySQL version on all nodes:
 ```

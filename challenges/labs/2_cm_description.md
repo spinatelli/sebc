@@ -1,4 +1,4 @@
-Using node `bcb4`, a.k.a. `ip-10-0-1-4` as Cloudera Manager node.
+Using node `bcb4`, a.k.a. `ip-10-0-1-4`, publicly `54.93.113.181` as Cloudera Manager node.
 
 Install the yum repo on all nodes:
 ```
