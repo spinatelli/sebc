@@ -6,8 +6,8 @@
 ---
 
 # <center> FCE Boot Camp </center>
-## <center> November 14-18, 2016 </center>
-## <center> Munich, Germany </center>
+## <center> January 9-13, 2017 </center>
+## <center> Palo Alto, California</center>
 
 ---
 <div style="page-break-after: always;"></div>
@@ -24,7 +24,8 @@
 ## <center> <a name="instructor"/> Instructors & Students
 
 * Michael Ernest (Senior Learning Architect) - mfernest
-* Jan Kunigk (Senior Solutions Architect) - jqnik
+* Andre Araujo (Senior Solutions Architect) - araujo
+* Benjamin Vera-Tudela (Senior Solutions Architect) - bveratudela
 * Please introduce yourselves:
     * Name
     * Region & Role
