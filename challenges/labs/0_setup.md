@@ -15,6 +15,22 @@ Installed `ansible` for easier execution of commands on multiple hosts:
 ```
 sudo yum install -y ansible
 ```
+The `bc4` node (i.e. `ip-10-0-0-4`) I use as an edge node to run ansible commands from.
+This is my hosts file for running ansible commands:
+
+```
+[cm]
+bc4
+
+[mysql]
+bc7
+
+[others]
+bc9
+bc13
+bc11
+
+```
 
 ### Instances
 
