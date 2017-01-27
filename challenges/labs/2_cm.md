@@ -1,6 +1,6 @@
 # Repos
 ```
-[ec2-user@ip-10-0-0-4 ~]$ ls /etc/yum.repos.d
+[ec2-user@ip-10-0-1-4 ~]$ ls /etc/yum.repos.d
 cloudera-manager.repo  epel-testing.repo     mysql-community-source.repo  redhat-rhui-client-config.repo  rhui-load-balancers.conf
 epel.repo              mysql-community.repo  redhat.repo                  redhat-rhui.repo
 ```
@@ -8,7 +8,7 @@ epel.repo              mysql-community.repo  redhat.repo                  redhat
 # Prepare databases
 
 ```
-[ec2-user@ip-10-0-0-4 ~]$ sudo /usr/share/cmf/schema/scm_prepare_database.sh -h bc7 mysql scm cloudera-scm
+[ec2-user@ip-10-0-1-4 ~]$ sudo /usr/share/cmf/schema/scm_prepare_database.sh -h bc7 mysql scm cloudera-scm
 Enter SCM password:
 JAVA_HOME=/usr/java/jdk1.8.0_111
 Verifying that we can write to /etc/cloudera-scm-server
